@@ -1,2 +1,4 @@
 # useStateDemos
-Created with CodeSandbox
+
+Small components built using React JS and the useState hook.
+Created with CodeSandbox.
