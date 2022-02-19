@@ -1,4 +1,8 @@
-# useStateDemos
+# What is this?
 
-Small components built using React JS and the useState hook.
-Created with CodeSandbox.
+- A React JS project.
+- Purpose: demonstrating conversion of React class components to functional components and practicing using useState hook.
+
+- A collection of projects like these are listed in my [build-js] repo! Check it out, I dare ya.
+
+Created with CodeSandbox 🤓
