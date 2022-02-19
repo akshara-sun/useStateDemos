@@ -1,6 +1,6 @@
+import "./styles.css";
 import CounterHook from "../src/components/hookCounter";
 import CounterClass from "../src/components/classCounter";
-import "./styles.css";
 import TodoListClass from "./components/toDoListApps/classTodo";
 import ToDoListHookComponent from "./components/toDoListApps/hookTodo";
 

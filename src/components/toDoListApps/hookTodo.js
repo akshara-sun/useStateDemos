@@ -7,9 +7,8 @@ export default function ToDoListHookComponent() {
   const [taskList, setTaskList] = useState([...data]);
   const [completedList, setCompletedList] = useState([]);
 
-  const handleSubmit = (event, userInput) => {
-    event.preventDefault();
-    if (userInput === "") {
+  const handleSubmit = () => {
+    if (input === "") {
       alert("Cannot add blank space as a task.");
     } else {
       setTaskList((taskList) => [...taskList, input]);
@@ -49,14 +48,13 @@ export default function ToDoListHookComponent() {
           <tbody>
             <tr>
               <td className="table">
-                <form onSubmit={handleSubmit}>
-                  <input
-                    placeholder="Add tasks here..."
-                    value={input}
-                    type="text"
-                    onChange={(e) => updateInput(e.target.value)}
-                  />
-                </form>
+                <input
+                  placeholder="Add tasks here..."
+                  value={input}
+                  type="text"
+                  onChange={(e) => updateInput(e.target.value)}
+                />
+                <button onClick={() => handleSubmit(input)}>Add To List</button>
                 <ol className="toDoList">
                   {taskList.map((todo, index) => (
                     <li key={index.toString()}>
